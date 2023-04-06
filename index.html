@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DJ Turntable :: Musical and Entertainment Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Logo2.png">
+    <script src="code.js"></script>
+  </head>
+  <body class="parallax" id="main">
+    <div class="container1">
+      <header class = "headerwrapper">
+        <a href = "index.html"><img class = "headerpic" src = "Logo2.png" alt = "logo link to home page"></a>
+        <div class = "headertext">
+          <h1>We Make Music the Heartbeat of Your Celebration!</h1>
+        </div>
+      </header>
+      <nav>
+        <table class="navTable">
+          <tr>
+            <td><p>phone number</p></td>
+            <td><a href="DJTurntableTwitter"><img id="twitter" src = "twitter.png" alt = "link to DJ Turntable twitter"></a></td>
+            <td><a href="DJTurntableFacebook"><img id="facebook" src = "facebook.png" alt = "link to DJ Turntable facebook"></a></td>
+            <td tabindex="0" onkeypress="navButton(this)" onclick="navButton(this)"><div><div class="menu"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div></div></td>
+          </tr>
+        </table>
+        <div id="mySidenav" class="sidenav">
+          <!-- Not reverting the menu icon when closed by phone close button -->
+          <a href="javascript:void(0)" id="menuX" class="closebtn" onclick="navButton(this)">&times;</a>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <span onclick="dropOpen()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">About DJ Turntable &darr;</span><!-- How to open with tab -->
+            <div id="myDropdown" class="dropdown-content">
+              <a href="about.html">About</a>
+              <a href="story.html">My Story</a>
+            </div>
+          </div>
+          <a href="packages.html">Entertainment Packages</a>
+          <div class="dropdown">
+            <span onclick="dropOpenEvents()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">Events &darr;</span>
+            <div id="myDropdownEvents" class="dropdown-content">
+              <a href="events.html">Events</a>
+              <a href="weddings.html">Weddings</a>
+              <a href="school.html">School Celebrations</a>
+              <a href="corporate.html">Corporate Events</a>
+              <a href="special.html">Special Occasions</a>
+            </div>
+          </div>
+          <a href="reviews.html">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact DJ Turntable</a>
+        </div>
+      </nav>
+      <main class="nestedMain">
+        <div class="topBar">
+          <div class="topVideo">
+            <video preload="metadata" controls poster="videoImage1.png">
+              <source src="DJTurntable.mp4" type="video/mp4">
+              <p>Your browser doesn't support HTML5 video. Here is a <a href="#">link to the video</a> instead.</p>
+            </video>
+          </div>
+          <div class="topText">
+            <p>DJ Turntable is a full-service disc jokey and entertainment company that delivers fantastic music. great sound, and amazing light with spot-on professionalism.</p>
+            <p>Whether you're planning a wedding, school celebration, corporate event, or private party, DJ Turntable will make music the heartbeat of your celebration. We use state-of-the-art equipment to pump out the songs that you want to hear. With a difital music library of over 50,000 songs, you'll undoubtedly be able to create the playlist you've been dreaming of. Our years of experience guarantee that you get stress-free event planning and happy, dancing guests.</p>
+          </div>
+          <div class="topAudio">
+            <audio controls>
+              <source src="DJTurntableAudio1.mp3" type="audio/mp3">
+              <p>Your browser doesn't support HTML5 audio. Here is a <a href="#">link to the audio</a> instead.</p>
+            </audio>
+          </div>
+        </div>
+        <div class="middleBar">
+          <div class="bottomVideo">
+            <video preload="metadata" controls poster="videoImage2.png">
+              <source src="DJTurntable.mp4" type="video/mp4">
+              <p>Your browser doesn't support HTML5 video. Here is a <a href="#">link to the video</a> instead.</p>
+            </video>
+          </div>
+          <p class="bottomText"><b><a href="#">See</a> some of the fun and <a href="#">hear</a> some of the music!</b></p>
+          <div class="bottomAudio">
+            <audio controls>
+              <source src="DJTurntableAudio2.mp3" type="audio/mp3">
+              <p>Your browser doesn't support HTML5 audio. Here is a <a href="#">link to the audio</a> instead.</p>
+            </audio>
+          </div>
+        </div>
+        <div class="bottomBar">
+          <div class="leftText">
+            <h2><a href="about.html">Meet the DJ</a></h2>
+            <p>Dylan Jackson has a passion for music and loves sharing it with great people.</p>
+            <p>Read his story and get to know DJ Turntable.</p>
+          </div>
+          <div class="middleText">
+            <h2><a href="events.html">Event Services</a></h2>
+            <p>DJ Turntable has a lot of experieve playing for all types of audiences at all kinds of celebrations. See how much fun you can have!</p>
+          </div>
+          <div class="rightText">
+            <h2><a href="reviews.html">Rave Reviews</a></h2>
+            <p><b>We're not bragging, but out clients are! Here's the beat on the street:</b></p>
+            <p>"Our students were thrilled, and even the teachers enjoyed the evening!"</p>
+          </div>
+          <figure class="leftFigure"><a href="about.html"><img src="board.png" alt=""></a></figure>
+          <figure class="middleFigure"><a href="events.html"><img src="headphones.png" alt=""></a></figure>
+          <figure class="rightFigure"><a href="reviews.html"><img src="handson.png" alt=""></a></figure>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright notice: &copy;<Strong>2023.DJ Turntable, Inc. All Rights Reserved.</Strong></p>
+        <p>DJ Turntable address, phone, and fax numbers</p>
+        <p>DJ Turntable email address</p>
+      </footer>
+    </div>
+  </body>
+</html>
