@@ -356,14 +356,17 @@ main p
 .leftText
 {
   grid-area: leftText;
+  text-align: left;
 }
 .middleText
 {
   grid-area: middleText;
+  text-align: left;
 }
 .rightText
 {
   grid-area: rightText;
+  text-align: left;
 }
 .bottomBar h2
 {
@@ -549,7 +552,7 @@ video
 {
   width: 480px;
   max-width:100%;
-  min-height:246px;
+  min-height:270px;
 }
 video[poster]
 {
