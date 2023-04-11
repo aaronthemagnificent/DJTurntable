@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DJ Turntable :: Musical and Entertainment Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Logo2.png">
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div class="container2">
+      <header class = "headerwrapper">
+        <a href = "index.html"><img class = "headerpic" src = "Logo2.png" alt = "logo link to home page"></a>
+        <div class = "headertext">
+          <h1>Call, email, tweet, or just whistle!</h1>
+        </div>
+      </header>
+      <nav>
+        <table class="navTable">
+          <tr>
+            <td><p>phone number</p></td>
+            <td><a href="DJTurntableTwitter"><img id="twitter" src = "twitter.png" alt = "link to DJ Turntable twitter"></a></td>
+            <td><a href="DJTurntableFacebook"><img id="facebook" src = "facebook.png" alt = "link to DJ Turntable facebook"></a></td>
+            <td tabindex="0" onkeypress="navButton(this)" onclick="navButton(this)"><div><div class="menu"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div></div></td>
+          </tr>
+        </table>
+        <div id="mySidenav" class="sidenav">
+          <!-- Not reverting the menu icon when closed by phone close button -->
+          <a href="javascript:void(0)" id="menuX" class="closebtn" onclick="navButton(this)">&times;</a>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <span onclick="dropOpen()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">About DJ Turntable &darr;</span><!-- How to open with tab -->
+            <div id="myDropdown" class="dropdown-content">
+              <a href="about.html">About</a>
+              <a href="story.html">My Story</a>
+            </div>
+          </div>
+          <a href="packages.html">Entertainment Packages</a>
+          <div class="dropdown">
+            <span onclick="dropOpenEvents()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">Events &darr;</span>
+            <div id="myDropdownEvents" class="dropdown-content">
+              <a href="events.html">Events</a>
+              <a href="weddings.html">Weddings</a>
+              <a href="school.html">School Celebrations</a>
+              <a href="corporate.html">Corporate Events</a>
+              <a href="special.html">Special Occasions</a>
+            </div>
+          </div>
+          <a href="reviews.html">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact DJ Turntable</a>
+        </div>
+      </nav>
+      <main class="nestedContact">
+        <div class="topText">
+          <p>DJ Turntable / 3026 North Ashland Avenue / Chicago, IL 60657</p>
+        </div>
+        <div class="contactInfoNested">
+          <section class="contactLeft">
+            <p>Web:</p>
+            <p>Phone:</p>
+            <p>Fax:</p>
+            <p>Email:</p>
+            <p>Twitter:</p>
+            <p>Facebook:</p>
+          </section>
+          <section class="contactRight">
+            <p>www.djturntable.com</p>
+            <p>(888) 555-GIGS</p>
+            <p>(312) 555-GIGS</p>
+            <p>dj@djturntable.com</p>
+            <p>@[name]</p>
+            <p>www.facebook.com/[NAME]</p>
+          </section>
+        </div>
+        <form class="nestedForm" autocomplete="off" action="https://formspree.io/f/xnqyvnay" method ="POST">
+          <div class = "form1">
+            Name*<br><input type="text" size="30" placeholder="Jane Doe" autofocus required name="fullname" aria-label="Name"><br>
+            Phone*<br><input type="tel" size="30" placeholder="111-1111" required aria-label="Phone Number"><br>
+            Email*<br><input type="email" size="30" placeholder="fake@fake.com" required name="email" aria-label="Email"><br>
+          </div>
+          <div class = "form2">
+            Event:<br><input type="text" list="events" aria-label="Current High School"><br>
+            <datalist id="events">
+              <option value="Wedding"></option>
+              <option value="School Celebration"></option>
+              <option value="Corporate Event"></option>
+              <option value="Special Occasion"></option>
+              <option value="Other"></option>
+            </datalist>
+            Event Date<br><input type="date" size="30" aria-label="Expected start date"><br>
+            <br><input type="submit" class="button" value="Help me Entertain!">
+          </div>
+        </form>
+      </main>
+      <footer>
+        <p>Copyright notice: &copy;<Strong>2023.DJ Turntable, Inc. All Rights Reserved.</Strong></p>
+        <p>DJ Turntable address, phone, and fax numbers</p>
+        <p>DJ Turntable email address</p>
+      </footer>
+    </div>
+  </body>
+</html>
