@@ -880,7 +880,7 @@ footer p
 .container1 /* Used for index.html */
 {
   display: grid;
-  background-image: radial-gradient(black, #041C08, black);
+  background-image: radial-gradient(#041C08, black);
   grid-template-columns: 100%;
   grid-gap:.5em;
   margin: 100vh -1vw -1vw -1vw;
