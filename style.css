@@ -21,7 +21,7 @@ a
 }
 a:hover
 {
-  color: rgb(69, 98, 167);
+  color: blue;
 }
 p
 {
@@ -252,15 +252,15 @@ nav
 }
 .sidenav a:hover
 {
-  color: #4CBB17;
+  color: blue;
 }
 #myDropdown a:hover
 {
-  color: white;
+  color: blue;
 }
 #myDropdownEvents a:hover
 {
-  color: white;
+  color: blue;
 }
 
 /* Dropdown */
@@ -308,7 +308,7 @@ nav
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover
 {
-  background-color: gray;
+  background-color: blue;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -366,7 +366,7 @@ main p
 }
 .bottomText a:hover
 {
-  color: rgb(212, 222, 86);
+  color: blue;
 }
 .bottomVideo
 {
@@ -524,7 +524,7 @@ form
 }
 #contactMePackage a:hover
 {
-  color: #C6C624;
+  color: blue;
 }
 /* Events */
 .eventsMain
