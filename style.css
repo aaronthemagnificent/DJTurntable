@@ -26,7 +26,7 @@ a:hover
 p
 {
   font-size: 0.0625em;
-  color: rgb(212, 222, 86);
+  color: #C6C624;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -34,12 +34,12 @@ h1
 {
   font-size: 2em;
   font-weight: bold;
-  color: rgb(114, 154, 48);
+  color: #C6C624;
 }
 h2, h3, h4, h5, h6
 {
   font-style: italic;
-  color: rgb(114, 154, 48);
+  color: #C6C624;
 }
 h2
 {
@@ -64,7 +64,7 @@ h6
 li
 {
   font-size: 1em;
-  color: rgb(114, 154, 48);
+  color: #C6C624;
 }
 
 /* Parallax */
@@ -357,7 +357,7 @@ main p
 {
   font-size: 1.6em;
   font-style: italic;
-  color: rgb(69, 98, 160);
+  color: #C6C624;
   grid-area: bottomText;
 }
 .bottomText a
@@ -445,7 +445,7 @@ figure {
 }
 form
 {
-  color: rgb(212, 222, 86);
+  color: #C6C624;
 }
 
 /* Packages Main */
@@ -490,7 +490,7 @@ form
 .nestedPackages2
 {
   margin-left: 5px;
-  color: rgb(212, 222, 86);
+  color: #C6C624;
 }
 .packageReview
 {
@@ -520,11 +520,11 @@ form
 {
   text-align: center;
   grid-area: contactMePackage;
-  color: rgb(69, 98, 167);
+  color: #C6C624;
 }
 #contactMePackage a:hover
 {
-  color: rgb(212, 222, 86);
+  color: #C6C624;
 }
 /* Events */
 .eventsMain
@@ -566,7 +566,7 @@ grid-area: aside;
   left: 0;
   right: 0;
   background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
-  color: rgb(212, 222, 86);
+  color: #C6C624;
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -598,7 +598,7 @@ grid-area: aside;
   left: 0;
   right: 0;
   background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
-  color: rgb(212, 222, 86);
+  color: #C6C624;
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -630,7 +630,7 @@ grid-area: aside;
   left: 0;
   right: 0;
   background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
-  color: rgb(212, 222, 86);
+  color: #C6C624;
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -662,7 +662,7 @@ grid-area: aside;
   left: 0;
   right: 0;
   background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
-  color: rgb(212, 222, 86);
+  color: #C6C624;
   visibility: hidden;
   opacity: 0;
   display: flex;
