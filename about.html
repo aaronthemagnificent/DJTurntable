@@ -8,12 +8,12 @@
     <link rel="icon" href="Logo2.png">
     <script src="code.js"></script>
   </head>
-  <body>
+  <body id="main">
     <div class="container2">
-      <header class = "headerwrapper">
+      <header class = "headerwrapperReview">
         <a href = "index.html"><img class = "headerpic" src = "Logo2.png" alt = "logo link to home page"></a>
         <div class = "headertext">
-          <h1>Call, email, tweet, or just whistle!</h1>
+          <h1>It's all about you!</h1>
         </div>
       </header>
       <nav>
@@ -30,7 +30,7 @@
           <a href="javascript:void(0)" id="menuX" class="closebtn" onclick="navButton(this)">&times;</a>
           <a href="index.html">Home</a>
           <div class="dropdown">
-            <span onclick="dropOpen()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">About DJ Turntable &darr;</span>
+            <span onclick="dropOpen()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">About DJ Turntable &darr;</span><!-- How to open with tab -->
             <div id="myDropdown" class="dropdown-content">
               <a href="about.html">About</a>
               <a href="story.html">My Story</a>
@@ -53,31 +53,12 @@
           <a href="contact.html">Contact DJ Turntable</a>
         </div>
       </nav>
-      <main class="nestedContact">
-        <div class="contactText">
-          <p>DJ Turntable / 3026 North Ashland Avenue / Chicago, IL 60657</p>
-          <p>Web: www.djturntable.com</p>
-          <p>Phone: (888) 555-GIGS</p>
-          <p>Fax: (312) 555-GIGS</p>
-          <p>Email: dj@djturntable.com</p>
-          <p>Twitter: @[name]</p>
-          <p>Facebook: www.facebook.com/[NAME]</p>
-        </div>
-        <form class="nestedForm" autocomplete="off" action="https://formspree.io/f/xnqyvnay" method ="POST">
-          Name*<br><input type="text" size="23" placeholder="Jane Doe" autofocus required name="fullname" aria-label="Name"><br>
-          Phone*<br><input type="tel" size="23" placeholder="111-1111" required aria-label="Phone Number"><br>
-          Email*<br><input type="email" size="23" placeholder="fake@fake.com" required name="email" aria-label="Email"><br>
-          Event:<br><input type="text" list="events" aria-label="Current High School"><br>
-            <datalist id="events">
-            <option value="Wedding"></option>
-            <option value="School Celebration"></option>
-            <option value="Corporate Event"></option>
-            <option value="Special Occasion"></option>
-            <option value="Other"></option>
-          </datalist>
-          Event Date<br><input type="date" size="23" aria-label="Expected start date"><br>
-            <br><input type="submit" class="button" value="Help me Entertain!">
-        </form>
+      <main>
+        <p>For more, take a look at <a href="story.html">My Story</a>!</p>
+        <p>Our mission is to provide you and your guests with the best party experience ever. From the first time we connect, to when we say "good night" at the end of a gig, you get our full attention and expert service. No matter the celebration, we know what music to suggest and spin for you. Every event is different because everyone has their own unique personality and taste in music. Your playlist will be a custom fit, not only for the occasion, but for you. We guarantee that your musical expectations will be met. <br> <a href="contact.html">Contact us</a> and let us know what dates you're looking for.</p>
+        <br>
+        <figure class="aboutImage"><img src="party2.jpg" alt=""></figure>
+        <br>
       </main>
       <footer>
         <p>Copyright notice: &copy;<Strong>2023.DJ Turntable, Inc. All Rights Reserved.</Strong></p>

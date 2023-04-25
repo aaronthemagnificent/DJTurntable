@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DJ Turntable :: Musical and Entertainment Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Logo2.png">
+    <script src="code.js"></script>
+  </head>
+  <body id="main">
+    <div class="container2">
+      <header class = "headerwrapperReview">
+        <a href = "index.html"><img class = "headerpic" src = "Logo2.png" alt = "logo link to home page"></a>
+        <div class = "headertext">
+          <h1>Rave Reviews</h1>
+        </div>
+        <figure class="reviewImage"><img src="party.jpg" alt=""></figure>
+      </header>
+      <nav>
+        <table class="navTable">
+          <tr>
+            <td><p>phone number</p></td>
+            <td><a href="DJTurntableTwitter"><img id="twitter" src = "twitter.png" alt = "link to DJ Turntable twitter"></a></td>
+            <td><a href="DJTurntableFacebook"><img id="facebook" src = "facebook.png" alt = "link to DJ Turntable facebook"></a></td>
+            <td tabindex="0" onkeypress="navButton(this)" onclick="navButton(this)"><div><div class="menu"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div></div></td>
+          </tr>
+        </table>
+        <div id="mySidenav" class="sidenav">
+          <!-- Not reverting the menu icon when closed by phone close button -->
+          <a href="javascript:void(0)" id="menuX" class="closebtn" onclick="navButton(this)">&times;</a>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <span onclick="dropOpen()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">About DJ Turntable &darr;</span><!-- How to open with tab -->
+            <div id="myDropdown" class="dropdown-content">
+              <a href="about.html">About</a>
+              <a href="story.html">My Story</a>
+            </div>
+          </div>
+          <a href="packages.html">Entertainment Packages</a>
+          <div class="dropdown">
+            <span onclick="dropOpenEvents()" onkeypress="dropOpen()" class="dropbtn" tabindex="0">Events &darr;</span>
+            <div id="myDropdownEvents" class="dropdown-content">
+              <a href="events.html">Events</a>
+              <a href="weddings.html">Weddings</a>
+              <a href="school.html">School Celebrations</a>
+              <a href="corporate.html">Corporate Events</a>
+              <a href="special.html">Special Occasions</a>
+            </div>
+          </div>
+          <a href="reviews.html">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact DJ Turntable</a>
+        </div>
+      </nav>
+      <main class="reviewsMain">
+        <p class="reviewText">Our clients are our best advertisement! Here's the beat on the street...</p>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">1 / 6</div>
+            <p>Dylan, you were the absolute best! The music was fantastic, and the lighting effects were amazing. Your talent transformed an ordinary gym into a high-tech night club. Our students were thrilled, and even the teachers enjoyed the evening! Everyone I've talked to agrees that this was the best seinor prom we've had in years. Thank you for sharing your talent with us.<br><i>Maureen A./Principal, Madison Creek High School</i></p>
+          </div>
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">2 / 6</div>
+            <p>We have never met a DJ who was so personable and easy to work with. You were right-you did make it "all about us!" We were so impressed by how smoothly our parents' anniversary went, and the music and dancing were incredible. We're still amazing how you were able to get the grandkids and grandparents on the dance floor at the same time! Thank you a thousand times.<br><i>Emma, Bridget, and Seth</i></p>
+          </div>
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">3 / 6</div>
+            <p>We want to personally thank you for the terrific job you did at our company holiday party. The night was wonderful in large part due to you and your help with the initial event planning. You had everyone on the dance floor at some point during the night. Just when we thought we could take a break, another great song came on.<br><i>Katherine J./Director of Administration, Cape Astor Investments</i></p>
+          </div>
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">4 / 6</div>
+            <p>Thank you for the fabulous work organizing our 80s dance party. The MTV decorations and music from that decade got everyone dancing. I was amazed by the depth of your music selection. Having the dancers with you to teach the guests the "Electric Slide" was brillant! Your professionalism and attention to the little things were second-to-none. All I had to do was show up and have a blast. Thank you! <br><i>Aggie H.</i></p>
+          </div>
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">5 / 6</div>
+            <p>Dylan,<br>Paul and I wanted to make sure that you knew how pleased we were with the job you did at our wedding. Our friends are still talking about the fun they had at the reception. Several have asked for your contact information, and we were more than happy to connect them with you. We can't wait to go to one of their weddings with you as the DJ! Thank you so much! <br><i>Melinda & Paul R.</i></p>
+          </div>
+          <div class="mySlides fade">
+            <br>
+            <div class="numbertext">6 / 6</div>
+            <p>Dear Dylan,<br>On behalf of the entire committee, I wish to thank you for your wonderful efforts in making our class reunion such a memorable evening. Your professionalism was on display from the day we first met. A great time was had by 1ll, thanks to the amazing playlist that you put together. You gave us a great ride down memory lane! Please call me for a reference anytime!<br><i>George H./Hopkinton High School Alumni Association</i></p>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <br>
+      </main>
+      <footer>
+        <p>Copyright notice: &copy;<Strong>2023.DJ Turntable, Inc. All Rights Reserved.</Strong></p>
+        <p>DJ Turntable address, phone, and fax numbers</p>
+        <p>DJ Turntable email address</p>
+      </footer>
+    </div>
+    <script>
+  showSlides(slideIndex);
+</script>
+  </body>
+</html>

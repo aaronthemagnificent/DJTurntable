@@ -61,6 +61,11 @@ h6
 {
   font-size: 1.125em;
 }
+li
+{
+  font-size: 1em;
+  color: rgb(114, 154, 48);
+}
 
 /* Parallax */
 html {
@@ -127,6 +132,25 @@ header
   grid-template-columns: 25% auto;
   grid-template-areas:
     "headerpic headertext";
+}
+.headerwrapperReview
+{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 25% auto 25%;
+  grid-template-areas:
+    "headerpic headertext reviewImage";
+}
+.reviewImage
+{
+  grid-area: reviewImage;
+}
+.reviewImage img
+{
+  width: 80%;
+  display: block;
+  margin: 20px 0 10px 0;
 }
 header h1 {
   font-size:2.5vw;
@@ -409,6 +433,428 @@ figure {
   margin:auto;
 }
 
+/* Contact Main */
+.contactText
+{
+  padding: 10px;
+  grid-area: contactText;
+}
+.nestedForm
+{
+  grid-area: form;
+}
+form
+{
+  color: rgb(212, 222, 86);
+}
+
+/* Packages Main */
+.packageText
+{
+  grid-area: packageText;
+  text-decoration: underline;
+}
+.packageImage
+{
+  grid-area: packageImage;
+}
+.packageImage2
+{
+  grid-area: packageImage2;
+}
+.silver
+{
+  grid-area: silver;
+}
+.gold
+{
+  grid-area: gold;
+}
+.platinum
+{
+  grid-area: platinum;
+}
+.packageImage img
+{
+  width: 100%;
+  display: block;
+  margin-right: 25px;
+}
+.packageImage2 img
+{
+  width: 100%;
+  display: block;
+  margin-right: 25px;
+  padding-right: 5px;
+}
+.nestedPackages2
+{
+  margin-left: 5px;
+  color: rgb(212, 222, 86);
+}
+.packageReview
+{
+  margin-left: 5px;
+}
+.packageReviewText
+{
+  margin-left: 10px;
+  grid-area: packageReviewText;
+}
+.packageReviewImage
+{
+  grid-area: packageReviewImage;
+}
+.packageReviewImage img
+{
+  width: 70%;
+  display: block;
+  float: right;
+  margin-right: 25px;
+}
+.packageTextClass
+{
+  font-size: 1.1em;
+}
+#contactMePackage
+{
+  text-align: center;
+  grid-area: contactMePackage;
+  color: rgb(69, 98, 167);
+}
+#contactMePackage a:hover
+{
+  color: rgb(212, 222, 86);
+}
+/* Events */
+.eventsMain
+{
+  margin-left: 10px;
+  grid-area: main;
+}
+.eventsAside
+{
+grid-area: aside;
+}
+.eventsAside p
+{
+  font-size: 1em;
+}
+.eventsSection
+{
+  margin-left: 10px;
+  grid-area: section;
+}
+.eventsSection img
+{
+  width:100%;
+}
+
+/* Image Overlay */
+.eventsSection {
+  border-radius: 1px;
+  padding: 10px;
+    }
+/* Weddings */
+.weddingsEvents {
+  position: relative;
+}
+.weddingsOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
+  color: rgb(212, 222, 86);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.weddingsEvents:hover .weddingsOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+.weddingsText {
+  font-size: 3em;
+  text-align: center;
+  transition: .2s;
+  transform: translateY(1em);
+}
+.weddingsImage:hover .weddingsText {
+  transform: translateY(0);
+}
+/* School */
+.schoolEvents {
+  position: relative;
+}
+.schoolOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
+  color: rgb(212, 222, 86);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.schoolEvents:hover .schoolOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+.schoolText {
+  font-size: 3em;
+  text-align: center;
+  transition: .2s;
+  transform: translateY(1em);
+}
+.schoolImage:hover .schoolText {
+  transform: translateY(0);
+}
+/* Corporate */
+.corporateEvents {
+  position: relative;
+}
+.corporateOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
+  color: rgb(212, 222, 86);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.corporateEvents:hover .corporateOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+.corporateText {
+  font-size: 3em;
+  text-align: center;
+  transition: .2s;
+  transform: translateY(1em);
+}
+.corporateImage:hover .corporateText {
+  transform: translateY(0);
+}
+/* Special */
+.specialEvents {
+  position: relative;
+}
+.specialOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(2, 48, 32, 0.6); /*change to match your theme*/
+  color: rgb(212, 222, 86);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.specialEvents:hover .specialOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+.specialText {
+  font-size: 3em;
+  text-align: center;
+  transition: .2s;
+  transform: translateY(1em);
+}
+.specialImage:hover .specialText {
+  transform: translateY(0);
+}
+
+/* Reviews */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 5px 5px 5px 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -40px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: -40px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* About Main */
+.aboutImage img
+{
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Story Main */
+.storyText
+{
+  grid-area: storyText;
+}
+.storyImage
+{
+  grid-area: storyImage;
+}
+.storyImage img
+{
+  display: block;
+}
+
+/* Wedding */
+.weddingsPageTextTitle
+{
+  grid-area: weddingsPageTextTitle;
+}
+.weddingsPageText
+{
+  grid-area: weddingsPageText;
+}
+.weddingsPageImage
+{
+  grid-area: weddingsPageImage;
+}
+.weddingsPageImage img
+{
+  display: block;
+  margin: auto;
+}
+/* Gallery Main */
+.gallery img {
+  border: 1px solid white;
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+}
+/* Add a hover effect (blue shadow) */
+.gallery img:hover {
+  transform: scale(1.5);
+}
+.gallery1
+{
+  grid-area:gallery1;
+  margin-left: 60px;
+}
+.gallery2
+{
+  grid-area:gallery2;
+}
+.gallery3
+{
+  grid-area:gallery3;
+  margin-right: 60px;
+}
+.gallery4
+{
+  grid-area:gallery4;
+  margin-left: 60px;
+}
+.gallery5
+{
+  grid-area:gallery5;
+}
+.gallery6
+{
+  grid-area:gallery6;
+  margin-right: 60px;
+}
+
 /* Footer */
 footer
 {
@@ -495,7 +941,131 @@ footer p
     "middleBar"
     "bottomBar";
 }
-    
+
+.container2 /* Used for contact.html, packages.html, about.html, weddings.html */
+{
+  display: grid;
+  background-image: radial-gradient(black, #041C08, black);
+  grid-template-columns: 100%;
+  grid-gap:.5em;
+  margin: -1vw;
+  padding: 15px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+.nestedContact
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "contactText"
+    "form";
+}
+
+.nestedPackages
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "nestedPackages1"
+    "nestedPackages2";
+}
+.nestedPackages1
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "packageImage"
+    "packageText"
+    "packageImage2";
+}
+.nestedPackages2
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "silver"
+    "gold"
+    "platinum"
+    "contactMePackage";
+}
+.packageReview
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "packageReviewTest"
+    "packageReviewImage";
+}
+
+.nestedStory
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "storyText"
+    "storyImage";
+}
+
+.weddingsNested
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "weddingsPageTextTitle"
+    "weddingsPageText"
+    "weddingsPageImage";
+}
+
+.gallery
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "gallery1"
+    "gallery2"
+    "gallery3"
+    "gallery4"
+    "gallery5"
+    "gallery6";
+}
+
+.container3 /* Used for events.html, review.html*/
+{
+  display: grid;
+  background-image: radial-gradient(black, #041C08, black);
+  grid-template-columns: 100%;
+  grid-gap:.5em;
+  margin: -1vw;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "section"
+    "footer";
+}
+
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
   
@@ -582,8 +1152,6 @@ video[poster]
   max-width: 100%;
 }
 
-/* Images not centering */
-
 .leftPic
 {
   width: 50%;
@@ -617,7 +1185,73 @@ video[poster]
   max-width: 100%;
   padding-right: 5px;
 }
-  
+
+.container2 /* Used for contact.html, packages.html, about.html, weddings.html */
+{
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+}
+
+.nestedContact
+{
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "contactText form";
+}
+
+.packageReview
+{
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "packageReviewText packageReviewImage";
+}
+
+.nestedStory
+{
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "storyText storyImage";
+}
+
+.weddingsNested
+{
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "weddingsPageTextTitle weddingsPageImage"
+    "weddingsPageText weddingsPageImage";
+}
+
+.gallery
+{
+  padding: 5px;
+  display: grid;
+  grid-gap:.5em;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "gallery1 gallery2 gallery3"
+    "gallery4 gallery5 gallery6";
+}
+
+.container3 /* Used for events.html, review.html */
+{
+  display: grid;
+  background-image: radial-gradient(black, #041C08, black);
+  grid-template-columns: auto auto;
+  grid-gap:.5em;
+  margin: -1vw;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "aside aside"
+    "section section"
+    "footer footer";
+}
+
   #menuX {
     display: none;
   }
@@ -630,7 +1264,7 @@ video[poster]
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
   
-  .container1 /* Used for index.html */
+  .container2 /* Used for index.html */
 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -677,5 +1311,48 @@ video[poster]
       "leftText middleText rightText"
       "leftPic middlePic rightPic";
   }
+  
+  .container1 /* Used for contact.html, packages.html, about.html, weddings.html */
+{
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+}
+.nestedPackages2
+{
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "silver gold platinum"
+    "contactMePackage contactMePackage contactMePackage";
+}
+.packageText
+{
+  padding: 5px;
+  margin: 48px 35px 48px 35px;
+}
+.nestedPackages1
+{
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "packageText packageImage packageImage2";
+}
+
+.container3 /* Used for events.html, review.html */
+{
+  display: grid;
+  background-image: radial-gradient(black, #041C08, black);
+  grid-template-columns: 1fr 35%;
+  grid-gap:.5em;
+  margin: -1vw;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "section aside"
+    "footer footer";
+}
   
 }
