@@ -685,6 +685,10 @@ grid-area: aside;
 }
 
 /* Reviews */
+.reviewsMain
+{
+  color: #C6C624;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
